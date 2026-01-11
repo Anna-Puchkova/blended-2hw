@@ -5,14 +5,14 @@
 якщо довжина рядка менша за minLength — повертає "Too short"
 /* якщо довжина дорівнює або більша — повертає "Valid" */
 
-/* function checkLength(text, minLength){
+ function checkLength(text, minLength){
     if(text.length < minLength){
         return "Too short";
     } else{
         return "Valid";
     }
 }
-console.log(checkLength('Hello World!', 7));  */
+console.log(checkLength('Hello World!', 7));  
 
 
 
@@ -25,7 +25,7 @@ console.log(checkLength('Hello World!', 7));  */
 регістр не має значення (ERROR, Fail, fAiL — теж підходять)
 повертає true або false */
 
-/* function hasForbiddenWords(message){
+function hasForbiddenWords(message){
   const normalized = message.toLowerCase();
   return normalized.includes("error") || normalized.includes("fail");
 }
@@ -36,7 +36,7 @@ console.log(hasForbiddenWords("Get best sale offers now!")); // true
 console.log(hasForbiddenWords("Amazing SalE, only tonight!")); // true
 console.log(hasForbiddenWords("Trust me, this is not a spam message")); // true
 console.log(hasForbiddenWords("Get rid of sPaM emails. Our book in on sale!")); // true
-console.log(hasForbiddenWords("[ERROR] How to earn fast money?")); // true  */
+console.log(hasForbiddenWords("[ERROR] How to earn fast money?")); // true  
 
 
 
@@ -46,14 +46,14 @@ console.log(hasForbiddenWords("[ERROR] How to earn fast money?")); // true  */
 якщо довжина рядка не перевищує maxLength — повертає text
 якщо перевищує — обрізає рядок до maxLength символів і додає "..." */
 
-/* function shortenText(text, maxLength){
+ function shortenText(text, maxLength){
     if(text.length <= maxLength){
         return text;
     } else{
         return text.slice(0, maxLength) + "...";
     }
 }
-console.log(shortenText('Hello World', 7)); */
+console.log(shortenText('Hello World', 7)); 
 
 
 
@@ -67,7 +67,7 @@ console.log(shortenText('Hello World', 7)); */
 "premium" → "Premium plan costs 40$"
 будь-яке інше значення → "Unknown subscription type" */
 
-/* function getSubscriptionPrice(type){
+ function getSubscriptionPrice(type){
     let price;
     switch(type){
       case 'basic' : price = 10;
@@ -82,7 +82,7 @@ console.log(shortenText('Hello World', 7)); */
     }
     console.log(getSubscriptionPrice('basic'));
     console.log(getSubscriptionPrice('pro'));
-    console.log(getSubscriptionPrice('premium')); */
+    console.log(getSubscriptionPrice('premium')); 
 
 
 /* Оголоси функцію isEven(number), яка:
@@ -90,7 +90,7 @@ console.log(shortenText('Hello World', 7)); */
 повертає true, якщо число парне
 повертає false, якщо непарне */
 
-/* function isEven(number){
+ function isEven(number){
     if(number % 2 === 0){
         return true;
     } else{
@@ -98,7 +98,7 @@ console.log(shortenText('Hello World', 7)); */
     }
 }
 console.log(isEven(9));
-console.log(isEven(8)); */
+console.log(isEven(8)); 
 
 
 
@@ -109,7 +109,7 @@ console.log(isEven(8)); */
 якщо довжина рядка менша або дорівнює maxLength → повертає message
 якщо довжина більша → обрізає до maxLength символів і додає "..." */
 
-/* function formatNotification(message, maxLength){
+ function formatNotification(message, maxLength){
     if(message === ""){
         return "No message";
     } else if(message.length <= maxLength){
@@ -120,7 +120,7 @@ console.log(isEven(8)); */
 }
 console.log(formatNotification('message formatNotification(message, maxLength)', 12));
 console.log(formatNotification('message ', 12));
-console.log(formatNotification('', 12)); */
+console.log(formatNotification('', 12)); 
 
 
 
@@ -145,4 +145,4 @@ function checkAccess(role, isLoggedIn){
 console.log(checkAccess('admin', true));
 console.log(checkAccess('user', true));
 console.log(checkAccess('admin', false));
-console.log(checkAccess('usese', true));
+console.log(checkAccess('admin', true));
